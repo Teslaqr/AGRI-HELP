@@ -1,0 +1,57 @@
+/* Logo Styling */
+.logoWeb {
+    height: 60px;
+    width: 60px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 500px) {
+    /* Hide header completely on small screens (already in your code) */
+    .inPhone {
+        display: none;
+    }
+
+    /* Adjust Logo and Header Layout for smaller screens */
+    .flex.content-center {
+        flex-direction: column; /* Stack logo and navigation items vertically */
+        align-items: center;
+    }
+
+    .logoWeb {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    /* Adjust Navbar */
+    .flex-2.w-5\/12.mx-auto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .flex.mt-4.items-around {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    .text-lg {
+        font-size: 1rem; /* Make text smaller on mobile */
+    }
+
+    /* Buttons Styling */
+    .flex.items-center {
+        flex-direction: column;
+    }
+
+    button {
+        width: 80%; /* Make buttons take up more width */
+        margin: 8px 0;
+    }
+}
