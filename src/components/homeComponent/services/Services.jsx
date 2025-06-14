@@ -8,7 +8,7 @@ const Services = () => {
       <div className="flex justify-center flex-col p-9">
         <h1 className="text-4xl mt-2 font-bold m-auto">Our Services</h1>
         <p className="mt-3 text-lg font-semibold m-auto ">
-          Following are the services that Krishi Sadhan market provides for
+          Following are the services that Agri Help market provides for
           Farmers:
         </p>
         <img src={services4} className="serviceImg" alt="" />

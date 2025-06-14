@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import axios from "axios";
 import { renewAccessToken } from "./authAPI";
 const instance = axios.create({
-  baseURL: "https://krishi-sadhan-app.herokuapp.com",
+  baseURL: "postgresql://neondb_owner:npg_2TiqJfRy9sZD@ep-wandering-moon-a4fm1nc5-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require",
 });
 
 instance.interceptors.response.use(

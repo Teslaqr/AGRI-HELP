@@ -1,18 +1,26 @@
-import Firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/auth"; // 👈 Add this line
+// Import the functions you need
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
 
-const app = {
-  apiKey: "AIzaSyBWg8tE3-iKf7605Mc6hpI146epHabspe0",
-  authDomain: "krishi-sadhan-cc7b9.firebaseapp.com",
-  projectId: "krishi-sadhan-cc7b9",
-  storageBucket: "krishi-sadhan-cc7b9.appspot.com",
-  messagingSenderId: "700193489659",
-  appId: "1:700193489659:web:bcced5546f94e201b5a65e"
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBj4ygmY8O5tMJyXSGxnZfswYiLNOtWKXk",
+  authDomain: "agri-help-73388.firebaseapp.com",
+  projectId: "agri-help-73388",
+  storageBucket: "agri-help-73388.firebasestorage.app",
+  messagingSenderId: "75520034883",
+  appId: "1:75520034883:web:536836e0b84d8fb12aacf6",
+  measurementId: "G-GRLSF49LRZ"
 };
 
-const FirebaseApp = Firebase.initializeApp(app);
-const db = FirebaseApp.firestore();
-const auth = FirebaseApp.auth(); // 👈 Add this
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-export { db, auth };
+// Export the services you need
+const db = getFirestore(app);
+const auth = getAuth(app);
+const analytics = getAnalytics(app);
+
+export { db, auth, analytics };

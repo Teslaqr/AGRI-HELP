@@ -1,43 +1,43 @@
 import React from "react";
 import "./Workflow.css";
-// import Rectangle73 from "../../../img/Rectangle73.png";
 import videoPic from "../../../img/videoPic.png";
 
 const Workflow = () => {
   return (
-    <div className=" mb-10 p-12 bg-[#219653] ">
-      <h1 className="text-4xl font-bold uppercase mb-4 text-center">
-        How KRISHI SADHAN works?
-      </h1>
-      <p className="text-md font-medium uppercase mb-4 text-white text-center">
-        Take a Look at out Platform Demo
-      </p>
-      <div className="flex justify-around mediaQuery items-center text-white">
-        <div className="grow">
-          <ul className="list-decimal ml-[90px] list-inside">
-            <li className="text-2xl mr-4 my-4">Sign-up to the platform.</li>
-            <li className="text-2xl mr-4 my-3">
-              Post your ad for the off-season.
-            </li>
-            <li className="text-2xl mr-4 my-4">Provide equipment details.</li>
-            <li className="text-2xl mr-4 my-3">
-              Explore and filter lists of equipment.
-            </li>
-            <li className="text-2xl mr-4 my-4">
-              Check an available time slot.
-            </li>
-            <li className="text-2xl mr-4 my-3">
-              Chat with the owner and make a booking..
-            </li>
-            <li className="text-2xl mr-4 my-4">Stay updated by SMS.</li>
-          </ul>
+    <section className="bg-[#219653] py-16 px-6 md:px-16 rounded-3xl shadow-xl text-white">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold uppercase mb-4">
+          How Agri-Help Works?
+        </h1>
+        <p className="text-lg md:text-xl font-medium uppercase text-white opacity-90">
+          Take a look at our platform demo
+        </p>
+      </div>
+
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+        {/* Steps */}
+        <div className="w-full md:w-1/2">
+          <ol className="list-decimal list-inside space-y-4 text-xl md:text-2xl font-medium leading-relaxed pl-6">
+            <li>Sign up to the platform</li>
+            <li>Post your ad for the off-season</li>
+            <li>Provide equipment details</li>
+            <li>Explore and filter lists of equipment</li>
+            <li>Check an available time slot</li>
+            <li>Chat with the owner and make a booking</li>
+            <li>Stay updated by SMS</li>
+          </ol>
         </div>
-        <div className="h-1/2 w-1/2">
-          {/* <img src={Rectangle73} className='youtubeImg' alt="" /> */}
-          <img src={videoPic} className="" alt="" />
+
+        {/* Demo Image */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src={videoPic}
+            alt="Platform Demo"
+            className="rounded-2xl shadow-lg w-full max-w-md hover:scale-105 transition-transform duration-300"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
